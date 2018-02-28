@@ -4,3 +4,19 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Tablet width
+
+@mixin tablet {
+    @media (min-width: $width__tablet) {
+        @content;
+    }
+}
+
+// Desktop width
+
+@mixin desktop {
+    @media (min-width: $width__desktop) {
+        @content;
+    }
+}
