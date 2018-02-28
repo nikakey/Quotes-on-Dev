@@ -76,11 +76,6 @@ function qod_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
-
-
-
-
-
 /**
  * Custom functions that act independently of the theme templates.
  */
