@@ -36,6 +36,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 	## Posts and pages
 # Media
+# Header
+# Footer
 # Page Templates
 	## All Archives Page
 	## Submit a Quote Page
@@ -57,4 +59,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules";
 @import "content";
 @import "media";
+@import "header";
+@import "footer";
 @import "page-templates";
