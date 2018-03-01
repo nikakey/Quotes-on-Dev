@@ -490,6 +490,16 @@ a {
   a:hover {
     color: #00a300; }
 
+.number-pagination {
+  margin-top: 3rem;
+  font-weight: 300; }
+  .number-pagination a,
+  .number-pagination span {
+    padding-right: .5rem; }
+    .number-pagination a:last-child,
+    .number-pagination span:last-child {
+      padding-right: 0; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

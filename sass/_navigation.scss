@@ -11,3 +11,15 @@ a {
 		color: darken($color__link, 8);
 	}
 }
+
+.number-pagination {
+	margin-top: 3rem;
+	font-weight: 300;
+	a, 
+	span {
+		padding-right: .5rem;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
