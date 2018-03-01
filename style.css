@@ -327,6 +327,9 @@ big {
     .single .entry-content p {
       font-size: 2.5rem; } }
 
+.page .entry-content {
+  font-weight: 300; }
+
 .archive .entry-title,
 .blog .entry-title,
 .single .entry-title {
@@ -708,10 +711,14 @@ object {
 .page h2 {
   margin: 1.5rem 0; }
 
-.page ul {
+.page .post-archives ul,
+.page .category-archives ul,
+.page .tags-archives ul {
   padding: 0;
   margin: 0 0 1.5rem 0; }
-  .page ul li {
+  .page .post-archives ul li,
+  .page .category-archives ul li,
+  .page .tags-archives ul li {
     display: inline;
     margin-right: 1rem;
     line-height: 2; }

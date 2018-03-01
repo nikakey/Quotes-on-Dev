@@ -13,7 +13,9 @@
     h2 {
         margin: $base__space-unit 0;
     }
-    ul {
+    .post-archives ul,
+    .category-archives ul,
+    .tags-archives ul {
         padding: 0;
         margin: 0 0 $base__space-unit 0;
         li {
