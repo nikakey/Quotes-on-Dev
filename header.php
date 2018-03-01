@@ -28,7 +28,7 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 						</h1>
 
-						<a href="<?php esc_url( home_url( '/' ) ); ?>">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<img src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg'; ?>" class="logo" alt="Quotes on Dev Logo">
 						</a>
 

@@ -48,11 +48,32 @@
 
 .site-content {
 	@include desktop {
-		margin: 4.5rem 10rem;
+		margin: 4.5rem 12rem;
+		position: relative;
+		&::before {
+			content: "\f10d";
+			font-family: FontAwesome;
+			font-size: 7.5rem;
+			color: $color__brand-main;
+			position: absolute;
+			top: 0;
+			left: -11rem;
+			line-height: 1;
+		}
+		&::after {
+			content: "\f10e";
+			font-family: FontAwesome;
+			font-size: 7.5rem;
+			color: $color__brand-main;
+			position: absolute;
+			top: 0;
+			right: -11rem;
+			line-height: 1;
+		}
 	}
 }
 
-.archive .entry-meta, 
+.archive .entry-meta,
 .blog .entry-meta, 
 .single .entry-meta {
 	margin-bottom: 3rem;

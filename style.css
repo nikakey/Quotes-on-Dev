@@ -576,7 +576,26 @@ a {
 
 @media (min-width: 1080px) {
   .site-content {
-    margin: 4.5rem 10rem; } }
+    margin: 4.5rem 12rem;
+    position: relative; }
+    .site-content::before {
+      content: "\f10d";
+      font-family: FontAwesome;
+      font-size: 7.5rem;
+      color: #00cc00;
+      position: absolute;
+      top: 0;
+      left: -11rem;
+      line-height: 1; }
+    .site-content::after {
+      content: "\f10e";
+      font-family: FontAwesome;
+      font-size: 7.5rem;
+      color: #00cc00;
+      position: absolute;
+      top: 0;
+      right: -11rem;
+      line-height: 1; } }
 
 .archive .entry-meta,
 .blog .entry-meta,
