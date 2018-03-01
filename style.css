@@ -649,6 +649,20 @@ iframe,
 object {
   max-width: 100%; }
 
+.site-header {
+  margin-top: 3rem; }
+  .site-header .logo img {
+    width: 300px; }
+    @media (min-width: 620px) {
+      .site-header .logo img {
+        width: 500px; } }
+    @media (min-width: 1080px) {
+      .site-header .logo img {
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
