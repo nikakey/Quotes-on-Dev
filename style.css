@@ -361,6 +361,9 @@ big {
       .tags-archives ul .tag-cloud-link {
         font-size: 1.25rem !important; } }
 
+.quote-submission-wrapper p {
+  font-weight: 300; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
