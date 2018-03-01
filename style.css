@@ -616,6 +616,9 @@ a {
 .single .entry-meta {
   margin-bottom: 3rem; }
 
+.archive .hentry {
+  border-bottom: 1px dashed #ffffff; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -702,5 +705,9 @@ object {
     display: inline;
     margin-right: 1rem;
     line-height: 2; }
+
+.archive .page-title {
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 1.75rem; }
 
 /* Submit a Quote Page */
