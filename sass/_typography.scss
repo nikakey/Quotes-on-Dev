@@ -72,7 +72,6 @@ big {
 	font-size: 125%;
 }
 
-
 .archive .entry-content p, 
 .blog .entry-content p, 
 .single .entry-content p {
@@ -85,4 +84,20 @@ big {
 	@include desktop {
         font-size: 2.5rem;
     }
+}
+
+.archive .entry-title, 
+.blog .entry-title, 
+.single .entry-title {
+	font-weight: 300;
+	font-size: 1.25rem;
+	display: inline;
+}
+
+.archive .source, 
+.blog .source, 
+.single .source {
+	font-weight: 300;
+	font-size: 1.25rem;
+	font-style: italic;
 }

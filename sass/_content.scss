@@ -45,3 +45,15 @@
 		@include center-block;
 	}
 }
+
+.site-content {
+	@include desktop {
+		margin: 4.5rem 10rem;
+	}
+}
+
+.archive .entry-meta, 
+.blog .entry-meta, 
+.single .entry-meta {
+	margin-bottom: 3rem;
+}

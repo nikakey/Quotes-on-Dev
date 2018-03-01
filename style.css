@@ -327,6 +327,20 @@ big {
     .single .entry-content p {
       font-size: 2.5rem; } }
 
+.archive .entry-title,
+.blog .entry-title,
+.single .entry-title {
+  font-weight: 300;
+  font-size: 1.25rem;
+  display: inline; }
+
+.archive .source,
+.blog .source,
+.single .source {
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -559,6 +573,15 @@ a {
       display: block;
       margin-left: auto;
       margin-right: auto; } }
+
+@media (min-width: 1080px) {
+  .site-content {
+    margin: 4.5rem 10rem; } }
+
+.archive .entry-meta,
+.blog .entry-meta,
+.single .entry-meta {
+  margin-bottom: 3rem; }
 
 /*--------------------------------------------------------------
 # Media
