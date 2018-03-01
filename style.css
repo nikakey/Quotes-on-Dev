@@ -773,3 +773,5 @@ object {
   #quote-submission-form div input,
   #quote-submission-form div textarea {
     margin-bottom: 2rem; }
+  #quote-submission-form div input {
+    max-width: 380px; }
