@@ -1,0 +1,40 @@
+.site-footer {
+    .site-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4rem 0 3rem 0;
+        @include tablet {
+            flex-wrap: nowrap;
+        }
+        @include desktop {
+            justify-content: flex-end;
+        }
+        .footer-navigation {
+            ul {
+                margin: 1rem 0 0 0;
+                padding: 0;
+                font-weight: 300;
+                li {
+                    display: inline;
+                    padding: 0 1rem;
+                    border-right: $border__solid;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                        @include tablet {
+                            border-right: $border__solid;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            font-weight: 300;
+            @include tablet {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

@@ -16,13 +16,12 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #00cc00;
 
 // Border
 
-$border__dashed: 1px dashed #ffffff;
+$border__dashed: 1px dashed $color__text-main;
+$border__solid: 1px solid $color__text-main;
 
 // Typography
 
