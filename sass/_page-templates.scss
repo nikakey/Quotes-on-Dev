@@ -26,7 +26,8 @@
     }
 }
 
-.archive .page-title {
+.archive .page-title,
+.search .page-title {
     border-bottom: $border__dashed;
     padding-bottom: 1.75rem;
 }

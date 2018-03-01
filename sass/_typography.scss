@@ -86,7 +86,9 @@ big {
     }
 }
 
-.page .entry-content {
+.page .entry-content,
+.error404 .page-content,
+.search .entry-summary {
 	font-weight: 300;
 }
 
