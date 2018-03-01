@@ -9,7 +9,7 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
 
@@ -17,6 +17,11 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: .5rem 0;
 }
 
 /* Copy */
@@ -65,4 +70,19 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+
+.archive .entry-content p, 
+.blog .entry-content p, 
+.single .entry-content p {
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-align: left;
+	@include tablet {
+        font-size: 1.75rem;
+	}
+	@include desktop {
+        font-size: 2.5rem;
+    }
 }

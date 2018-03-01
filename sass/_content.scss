@@ -31,3 +31,17 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+.site-container {
+	max-width: $width__desktop;
+	width: 100%;
+	height: auto;
+	min-width: 350px;
+	padding: .75rem;
+	@include tablet {
+		padding: 1rem;
+	}
+	@include desktop {
+		@include center-block;
+	}
+}
