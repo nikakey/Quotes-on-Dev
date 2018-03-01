@@ -101,3 +101,15 @@ big {
 	font-size: 1.25rem;
 	font-style: italic;
 }
+
+.post-archives ul,
+.category-archives ul,
+.tags-archives ul {
+	font-weight: 300;
+	@include tablet {
+		font-size: 1.25rem;
+		.tag-cloud-link {
+			font-size: 1.25rem!important;
+		}
+	}
+}

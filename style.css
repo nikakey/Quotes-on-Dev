@@ -341,6 +341,20 @@ big {
   font-size: 1.25rem;
   font-style: italic; }
 
+.post-archives ul,
+.category-archives ul,
+.tags-archives ul {
+  font-weight: 300; }
+  @media (min-width: 620px) {
+    .post-archives ul,
+    .category-archives ul,
+    .tags-archives ul {
+      font-size: 1.25rem; }
+      .post-archives ul .tag-cloud-link,
+      .category-archives ul .tag-cloud-link,
+      .tags-archives ul .tag-cloud-link {
+        font-size: 1.25rem !important; } }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -674,4 +688,19 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+.page .entry-header,
+.archive .page-title {
+  margin: 3rem 0 2.5rem 0; }
+
+.page h2 {
+  margin: 1.5rem 0; }
+
+.page ul {
+  padding: 0;
+  margin: 0 0 1.5rem 0; }
+  .page ul li {
+    display: inline;
+    margin-right: 1rem;
+    line-height: 2; }
+
 /* Submit a Quote Page */
