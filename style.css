@@ -329,7 +329,8 @@ big {
 
 .page .entry-content,
 .error404 .page-content,
-.search .entry-summary {
+.search .entry-summary,
+#quote-submission-form label {
   font-weight: 300; }
 
 .archive .entry-title,
@@ -731,7 +732,8 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 .page .entry-header,
-.archive .page-title {
+.archive .page-title,
+.quote-submission-wrapper .entry-title {
   margin: 3rem 0 2.5rem 0; }
 
 .page h2 {
@@ -755,3 +757,16 @@ object {
   padding-bottom: 1.75rem; }
 
 /* Submit a Quote Page */
+#quote-submission-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #quote-submission-form div label {
+    margin-bottom: 1rem; }
+  #quote-submission-form div input,
+  #quote-submission-form div textarea {
+    margin-bottom: 2rem; }

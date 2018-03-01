@@ -5,7 +5,8 @@
 /* All Archives Page */
 
 .page .entry-header,
-.archive .page-title {
+.archive .page-title,
+.quote-submission-wrapper .entry-title {
     margin: 3rem 0 2.5rem 0;
 }
 
@@ -33,3 +34,15 @@
 }
 
 /* Submit a Quote Page */
+
+#quote-submission-form div {
+    display: flex;
+    flex-direction: column;
+    label {
+        margin-bottom: 1rem;
+    }
+    input,
+    textarea {
+        margin-bottom: 2rem;
+    }
+}
