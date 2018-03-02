@@ -1,6 +1,6 @@
 (function($){
 
-    //fetch a random quote post on the front page
+    // Fetch a random quote post on the front page
 
     $( '#new-quote-button' ).on( 'click', function ( event ) {
         event.preventDefault();
@@ -9,14 +9,16 @@
             url: 'wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function ( data ) {
                 var post = data.shift();
-                
-                console.log(post);
+
+                // Update the quote on the page
                 
                 $( '.entry-content' ).html( post.content.rendered );
                 $( '.entry-title' ).html( post.title.rendered );
 
+                // Check if the quote has a source (and a url to that source) and post it on the page
+
                 if ( post._qod_quote_source !== '' && post._qod_quote_source_url !== '' ) {
-                    $( '.source' ).html( ', <a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>' );
+                    $( '.source' ).html( ', <a href="' + post._qod_quote_source_url + '" target="_blank">' + post._qod_quote_source + '</a>' );
                 }
 
                 else if ( post._qod_quote_source !== '' && post._qod_quote_source_url === '' ) {
@@ -31,9 +33,9 @@
         });
     });
 
-    //history api, 
+    // History api
 
-    //submit a new quote with the form using ajax
+    // Submit a new quote with the form using ajax
 
 
 })(jQuery);
