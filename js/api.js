@@ -1,16 +1,17 @@
 (function($){
 
+    var lastState = '';
     // Fetch a random quote post on the front page
 
     $( '#new-quote-button' ).on( 'click', function ( event ) {
         event.preventDefault();
+        lastState = document.URL;
+
         $.ajax({
             method: 'GET',
             url: '/project-5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function ( data ) {
                 var post = data.shift();
-
-                console.log(post);
 
                 // Update the quote on the page
                 
@@ -33,12 +34,22 @@
 
                 // History api to update the URL
 
-                var stateObj = '';
-                history.pushState(stateObj, "post page", post.link);
-
+                history.pushState(null, null, post.link);
             }
-        
         });
+
+    });
+
+    // Going back and forth to the previous and next pages
+
+    window.addEventListener('popstate', function() {
+
+        if (window.location.hash.indexOf('qm-overview') === 1) {
+          return false;
+        } 
+        else {
+            window.location.replace(lastState);
+        }
     });
 
     // Submit a new quote with the form using ajax
