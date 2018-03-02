@@ -6,9 +6,11 @@
         event.preventDefault();
         $.ajax({
             method: 'GET',
-            url: 'wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+            url: '/project-5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function ( data ) {
                 var post = data.shift();
+
+                console.log(post);
 
                 // Update the quote on the page
                 
@@ -28,12 +30,16 @@
                 else {
                     $( '.source' ).html( '' );
                 }
+
+                // History api to update the URL
+
+                var stateObj = '';
+                history.pushState(stateObj, "post page", post.link);
+
             }
         
         });
     });
-
-    // History api
 
     // Submit a new quote with the form using ajax
 
