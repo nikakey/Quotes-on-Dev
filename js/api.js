@@ -54,5 +54,41 @@
 
     // Submit a new quote with the form using ajax
 
+    $( '#submit' ).on( 'click', function ( event ) {
+        event.preventDefault();
+
+        var title = $( '#quote-author' ).val();
+        var content = $( '#quote-content' ).val();
+        var source = $( '#quote-source' ).val();
+        var sourceURL = $( '#quote-source-url' ).val();
+
+        var JSONObj = {
+            'title' : title,
+            'content_raw' : content,
+            'source' : source,
+            'source_url' : sourceURL,
+            'status' : 'publish'
+        };
+
+        var url = api_vars.root_url + 'wp/v2/posts';
+ 
+        $.ajax({
+            type:'POST',
+            url: url,
+            dataType : 'json',
+            data: JSONObj,
+            beforeSend : function( xhr ) {
+               xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
+            },
+ 
+            success: function( ) {
+               $('#quote-submission-form').append( '<p>' + api_vars.success + '</p>' );
+            },
+            error: function( ) {
+                $('#quote-submission-form').append( '<p>' + api_vars.failure + '</p>' );
+            }
+        });
+
+    });
 
 })(jQuery);
