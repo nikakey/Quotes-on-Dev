@@ -1,23 +1,21 @@
-# Quotes on Dev Starter
+# Project 5: Quotes on Dev website
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+This is a WordPress theme for the Quotes on Dev website, which is created combining JavaScript and WordPress together. The website is functioning using the WordPress REST API.
 
-## Installation
+![alt text](/images/for-readme/screenshot-quotes-on-dev.png "A screenshot of the project website")
 
-### 1. Download me (don't clone me!)
+Quotes on Dev is a responsive website optimized for 3 screen sizes: mobile, tablet (620px) and desktop (1080px).
 
-Then add me to your `wp-content/themes` directory.
+## Key points of JS:
 
-### 2. Rename the `quotesondev-starter-master` directory
+* Fetch a random quote on the front page of the website using the WordPress REST API. I used the AJAX method "GET".
+* Change the quote on the front page of the website when the button *Show Me Another!* is clicked and update the URL. I used the History API.
+* Set a submission form for a registered user to submit a new quote. I used the AJAX method "POST".
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+![alt text](/images/for-readme/screenshot-submission.png "A screenshot of the Submission Page of the project website")
 
-### 3. Install the dev dependencies
+## Key points of WordPress:
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+* A custom Quotes on Dev theme based on the starter theme from the Underscore.
+* A default *Posts* page with no comments form. 
+* Two custom pages for the *Archives* and the *Submit a Quote* page.
