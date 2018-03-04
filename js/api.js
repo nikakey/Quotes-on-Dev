@@ -82,10 +82,12 @@
             },
  
             success: function( ) {
-               $('#quote-submission-form').append( '<p>' + api_vars.success + '</p>' );
+                $('#quote-submission-form').hide();
+                $('.quote-submission-wrapper').append( '<p>' + api_vars.success + '</p>' );
             },
             error: function( ) {
-                $('#quote-submission-form').append( '<p>' + api_vars.failure + '</p>' );
+                $('#quote-submission-form').hide();
+                $('.quote-submission-wrapper').append( '<p>' + api_vars.failure + '</p>' );
             }
         });
 
