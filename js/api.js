@@ -11,7 +11,8 @@
             method: 'GET',
             url: '/project-5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function ( data ) {
-                var post = data.shift();
+                var post = data.shift(),
+                url = api_vars.home_url + '/' + post.slug + '/';
 
                 // Update the quote on the page
                 
@@ -34,7 +35,7 @@
 
                 // History api to update the URL
 
-                history.pushState(null, null, post.slug);
+                history.pushState(null, null, url);
             }
         });
 
