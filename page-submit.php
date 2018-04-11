@@ -20,7 +20,7 @@ get_header(); ?>
                     if( is_user_logged_in() && current_user_can( 'edit_posts' ) ):
                 ?>
 
-                <form name="quoteForm" id="quote-submission-form">
+                <form name="quoteForm" class="quote-sub-form" id="quote-submission-form">
                     
                     <div>
                         <label for="quote-author">Author of Quote</label>

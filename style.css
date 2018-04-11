@@ -760,7 +760,7 @@ object {
   padding-bottom: 1.75rem; }
 
 /* Submit a Quote Page */
-#quote-submission-form div {
+.quote-sub-form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,10 +768,10 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #quote-submission-form div label {
+  .quote-sub-form div label {
     margin-bottom: 1rem; }
-  #quote-submission-form div input,
-  #quote-submission-form div textarea {
+  .quote-sub-form div input,
+  .quote-sub-form div textarea {
     margin-bottom: 2rem; }
-  #quote-submission-form div input {
+  .quote-sub-form div input {
     max-width: 380px; }
