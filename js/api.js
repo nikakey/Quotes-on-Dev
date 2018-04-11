@@ -7,9 +7,11 @@
         event.preventDefault();
         lastState = document.URL;
 
+        var getUrl = api_vars.root_url + 'wp/v2/posts';
+
         $.ajax({
             method: 'GET',
-            url: '/project-5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+            url: getUrl + '?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function ( data ) {
                 var post = data.shift(),
                 url = api_vars.home_url + '/' + post.slug + '/';
@@ -71,11 +73,11 @@
             'status' : 'publish'
         };
 
-        var url = api_vars.root_url + 'wp/v2/posts';
+        var postUrl = api_vars.root_url + 'wp/v2/posts';
  
         $.ajax({
             type:'POST',
-            url: url,
+            url: postUrl,
             dataType : 'json',
             data: JSONObj,
             beforeSend : function( xhr ) {
