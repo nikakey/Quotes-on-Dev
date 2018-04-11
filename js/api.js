@@ -34,7 +34,7 @@
 
                 // History api to update the URL
 
-                history.pushState(null, null, post.link);
+                history.pushState(null, null, post.slug);
             }
         });
 
