@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A WordPress starter theme for the Quotes on Dev project, forked from Underscores.",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "hoek": "^5.0.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
